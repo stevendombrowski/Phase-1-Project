@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
     <link rel="StyleSheet" href="./style.css">
+    <script type="text/javascript" src="java.js"></script>
     <head>
         <title>DogsList</title>
     </head>
-<h1 class="dogslist">DogsList</h1>
-<h2>Your Craigslist for Dogs!</h2>
+    
+
 <div class="Dogs">
+    <div id="header">
+        <!-- <img src='https://media.istockphoto.com/vectors/animal-shelter-pet-shop-flat-vector-illustration-vector-id1164940889?s=612x612'> -->
+        <a href="/"><img src='https://media.istockphoto.com/vectors/animal-shelter-pet-shop-flat-vector-illustration-vector-id1164940889?s=612x612' alt="Logo" class="logo" /></a>
+    </div><h1 class="dogslist">DogsList</h1>
+        <h2 class="quote">Your Craigslist for Dogs!</h2>
     <h1 class="catch-line">Adopt Now!</h1>
 </div>
+
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Popular pups')">Popular Pups</button>
+    <button class="tablinks" onclick="openCity(event, 'Find A Shelter')">Find A Shelter</button>
+    <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="Popular-pups" class="tabcontent">
+    <h3>Popular pups</h3>
+    <p>Here are the most viewed pups on our site!</p>
+  </div>
+  
+  <div id="Find A Shelter" class="tabcontent">
+    <h3>Find A Shelter</h3>
+    <p>Find the nearest Shelter near you!</p>
+    <div class="Shelters">
+        <iframe 
+    
+        src="https://www.google.com/maps/embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+  
+  <div id="About" class="tabcontent">
+    <h3>About</h3>
+    <p>Here is who we are and what we do.</p>
+  </div>
+</div>
+
+
 
 </html>
 
