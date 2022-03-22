@@ -16,55 +16,62 @@
 </div>
 
 <div class="tab">
-    <button type="reset" class="button" onclick="openCity(event, 'Popular pups')">Popular Pups</button>
-    <button class="tablinks" onclick="openCity(event, 'Find A Shelter')">Find A Shelter</button>
-    <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+    <button  id="button" onclick="openCity(event, 'Popularpups')"></button>
+    <button  id="shelter" onclick="openCity(event, 'FindShelter')"></button>
+    <button id="about" onclick="openCity(event, 'About')"></button>
   </div>
   
   <!-- Tab content -->
-  <div id='Popular pups' class='tabcontent'>
+  <div id='Popularpups' class='tabcontent'>
       <h3 class="popular">Popular Puppies</h3>
       <p class="popular">Here are our most popular pups on the site</p>
-      <div class="max">
+      
+        <ul>
+      <a href="/"><img src='https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/54618540/1/?bust=1644863862&width=300' width="150px" height="200" alt='Max' class='max'></a>
+      
+     <p class="text">Here is Max, he is just a young pup but is very cheerful and loving. He rocks a black overcoat with a white tummy! If you have any more questions feel free to reach out to the current Shelter!</p>
+        
+        
          
-      <a href="/"><img src='https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/54618540/1/?bust=1644863862&width=300' alt='Max' class='max'></a>
-     <p style="background-color:darkslateblue; width:50%; border-radius:5px; margin-left:auto; margin-right:auto; font-size:16px; padding:10px; margin:10px; transform: translate(50%, 50%)"><b>Here is Max, he is just a young pup but is very cheerful and loving. He rocks a black overcoat with a white tummy! If you have any more questions feel free to reach out to the current Shelter!</b></p>
-        </div>
-        <div id="max">
+            <a href="/"><img src='https://lh3.googleusercontent.com/f7Sgd8jYTOBhVfSQUEN76_WkR5a8Frxol32ve3WBeiqmjfzmhFdxBmyl_xlubRC49Bwh1nBp8sSKtEf4xBpy8MyvV97BD5q9HaC6DDJY4lI3IZDBMx3sKEoDuOrMSFC5nWtsQjBfEUEHBmVhxNpEGc2pwQdlXL8xJd1O3Fb4OVXrIQKp5eykO_w94jNwvYAXcOHbuXmlXUGH6UJZpdqCNVcU95de-zYv7Q3pgdz1hRXBYaJIFmWeuEKyv96V8eWhuI8j2o6dmhoCD2zKy6LWlvXN3AoX0ZTJMkneAJ9CZ4ltG_Bql_AiGzDsn5W3YF0fvdp2fBZRGB0-3-oUPuXY22noCnMRbfgSaRfZL6r14sIczS5Ws2Y1XHaTzKhN09jkmh1PDvMycc5JtcDJ0sLVEeD3OLl57j4i_fGB5PWyl25oue-sx8maB9pkrYO9Swi9f9JjzszB0r4LBGNmFCLpTcNHwUO49JMxH4GwZ5SZR0jaf0jsY6szlhHOuUIHHo4DVAMPZf0fk_4x5R0MFUWB1IcIhNpVdwbIR1iboGGvrltI7Tyxj_ykb5ZKf-tlivwTnl-RzHHPP6xVJ08pzwEA39JX55J9XTk-EZ-jHRS8UPCgAiOXLH2aIibbbgZ28weudapBtzig6hyFdK-1Km4exx5637h8ShAfg18R0l2pmrQCRhlEU5uO4pjNyvavg2vu3Uk21P2zH_9W8yb7f7TOZqNOHMy1KkPlfer4PvMwPXppYKqBjkIkRXX6Wk-hjqocWWKvBXHhEnwQLbCxFoEDPFuz1E7Ha-Lcr_zMmVHSAZs812GwmFqrPsJ_3dwv=w526-h422-no?authuser=0' width="200px" height="200" alt='Spike' class='max'></a>
+           <p class="text">Here is Spike, he is just a young pup but is very cheerful and loving. He rocks a black overcoat with a white tummy! If you have any more questions feel free to reach out to the current Shelter!</p>
+              
+              
          
-            <a href="/"><img src='https://www.longislandpress.com/wp-content/uploads/2019/09/Webp.net-resizeimage-2019-09-05T074757.557.jpg' alt='Spike' class='max'></a>
-           <p style="background-color:darkslateblue; width:50%; border-radius:5px; margin-left:auto; margin-right:auto; font-size:16px; padding:10px; margin: 5px;    transform: translate(50%, 50%)"><b>Here is Spike, he is just a young pup but is very cheerful and loving. He rocks a black overcoat with a white tummy! If you have any more questions feel free to reach out to the current Shelter!</b></p>
-              </div>
-              <div id="max">
-         
-                <a href="/"><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdbc1ZPg75BHlJ4EbC8Y7xX6LH7EhIOIpCJA&usqp=CAU' alt='Lizzie' class='max'></a>
-               <p style="background-color:darkslateblue; width:50%; border-radius:5px; margin-left:auto; margin-right:auto;  font-size:16px; padding:10px; margin:10px; margin-bottom: 10px;   transform: translate(50%, 50%)"><b>Here is Lizzie, he is just a young pup but is very cheerful and loving. He rocks a black overcoat with a white tummy! If you have any more questions feel free to reach out to the current Shelter!</b></p>
-                  </div>
+                <a href="/"><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdbc1ZPg75BHlJ4EbC8Y7xX6LH7EhIOIpCJA&usqp=CAU' alt='Lizzie' class='max'> </a>
+                
+               <p class="text">Here is Lizzie, he is just a young pup but is very cheerful and loving. He rocks a black overcoat with a white tummy! If you have any more questions feel free to reach out to the current Shelter!</b></p>
+                  
 
-                  <div id="max">
+                  
          
-                    <a href="/"><img src='https://rainbowvalleyvet.com/wp-content/uploads/2020/09/Dog_Shelter.png' alt='Alex' class='max'></a>
-                   <p style="background-color:darkslateblue; width:50%; border-radius:5px; margin-left:auto; margin-right:auto; font-size:16px; padding:10px; margin:10px;    transform: translate(50%, 50%)"><b>Here is Alex, he is just a young pup but is very cheerful and loving. He rocks a black overcoat with a white tummy! If you have any more questions feel free to reach out to the current Shelter!</b></p>
-                      </div>
-  </div>
-  
-  <div id="Find A Shelter" class="tabcontent">
-    <h3>Find A Shelter</h3>
-    <p>Find the nearest Shelter near you!</p>
-    <div class="Shelters">
-        <iframe 
-    
-        src="https://www.google.com/maps/embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-  </div>
-  
-  <div id="About" class="tabcontent">
-    <h3>About</h3>
-    <p>Here is who we are and what we do.</p>
-  </div>
-  
+                    <a href="/"><img src='https://rainbowvalleyvet.com/wp-content/uploads/2020/09/Dog_Shelter.png' width="250px" height="200" alt='Alex' class='max'></a>
+                   <p class="text">Here is Alex, he is just a young pup but is very cheerful and loving. He rocks a black overcoat with a white tummy! If you have any more questions feel free to reach out to the current Shelter!</b></p>
+        </ul>
 </div>
+  
+                   <div id="FindShelter" class="tabcontent">
+                       <div class="headertext"> <h3>Find A Shelter</h3>
+                    <p >Find the nearest Shelter near you!</p> </div>
+                    <p>This is where we are located!</p>
+                    <p style="text-align:center;"><iframe 
+                    
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.6176000574183!2d-75.05302088365863!3d39.725775779451496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6d419ca13a7a5%3A0xe84bf0932a9e4c27!2sEarthWise%20Pet%2F%20Turnersville!5e0!3m2!1sen!2sus!4v1647909308150!5m2!1sen!2sus" width="1450"  height="1200" style="border:0;" allowfullscreen="" id="map" loading="lazy"></iframe></p>
+                    <div class="Shelters">
+                        
+                    </div>
+                  </div>
+                  
+                  <div id="About" class="tabcontent">
+                    <h1>About</h1>
+                    <h3>Here is who we are and what we do.</h3>
+                    <p>We are a local organization that wants to help dogs of all ages, breeds, and personalities find their forever homne. Dogs are more than just pets, they are family. We know from experience that finding a dog for adoption can be a difficult process, so we like to help guide you to your new friend/family member.</p>
+                    <h2>How to contact us!</h2>
+                    <h3 class="contact">Phone Number: (XXX)-XXX-XXXX</h3>
+                    <h3 class="contact">Social media: </h3>
+                  </div>
+                  
+                </div>
 
 </html>
 
-    <!-- //Make a area finder for nearby shelters that you put your zip code in -->
