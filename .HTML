@@ -5,7 +5,7 @@
     <head>
         <title>DogsList</title>
     </head>
-    
+
 
 <div class="Dogs">
     <div id="header">
@@ -16,9 +16,11 @@
 </div>
 
 <div class="tab">
-    <button  id="button" onclick="openCity(event, 'Popularpups')"></button>
-    <button  id="shelter" onclick="openCity(event, 'FindShelter')"></button>
-    <button id="about" onclick="openCity(event, 'About')"></button>
+    <button  id="button" onclick="openTab(event, 'Popularpups')"></button>
+    <button  id="shelter" onclick="openTab(event, 'FindShelter')"></button>
+    <button id="about" onclick="openTab(event, 'About')"></button>
+    <button class="darkmode-button" onclick="dark()">Toggle dark mode</button>
+    
   </div>
   
   <!-- Tab content -->
@@ -27,11 +29,9 @@
       <p class="popular">Here are our most popular pups on the site</p>
       
         <ul>
-      <a href="/"><img src='https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/54618540/1/?bust=1644863862&width=300' width="150px" height="200" alt='Max' class='max' ></a>
+      <a href="/"><img src='https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/54618540/1/?bust=1644863862&width=300' width="200px" height="200" alt='Max' class='max' ></a>
       <button id="likebutton" onclick="myFunction(this, 'red')">Like</button>
      <p class="text">Here is Max, he is just a young pup but is very cheerful and loving. He rocks a black overcoat with a white tummy! If you have any more questions feel free to reach out to the current Shelter!</p>
-        
-        
          
             <a href="/"><img src='https://lh3.googleusercontent.com/f7Sgd8jYTOBhVfSQUEN76_WkR5a8Frxol32ve3WBeiqmjfzmhFdxBmyl_xlubRC49Bwh1nBp8sSKtEf4xBpy8MyvV97BD5q9HaC6DDJY4lI3IZDBMx3sKEoDuOrMSFC5nWtsQjBfEUEHBmVhxNpEGc2pwQdlXL8xJd1O3Fb4OVXrIQKp5eykO_w94jNwvYAXcOHbuXmlXUGH6UJZpdqCNVcU95de-zYv7Q3pgdz1hRXBYaJIFmWeuEKyv96V8eWhuI8j2o6dmhoCD2zKy6LWlvXN3AoX0ZTJMkneAJ9CZ4ltG_Bql_AiGzDsn5W3YF0fvdp2fBZRGB0-3-oUPuXY22noCnMRbfgSaRfZL6r14sIczS5Ws2Y1XHaTzKhN09jkmh1PDvMycc5JtcDJ0sLVEeD3OLl57j4i_fGB5PWyl25oue-sx8maB9pkrYO9Swi9f9JjzszB0r4LBGNmFCLpTcNHwUO49JMxH4GwZ5SZR0jaf0jsY6szlhHOuUIHHo4DVAMPZf0fk_4x5R0MFUWB1IcIhNpVdwbIR1iboGGvrltI7Tyxj_ykb5ZKf-tlivwTnl-RzHHPP6xVJ08pzwEA39JX55J9XTk-EZ-jHRS8UPCgAiOXLH2aIibbbgZ28weudapBtzig6hyFdK-1Km4exx5637h8ShAfg18R0l2pmrQCRhlEU5uO4pjNyvavg2vu3Uk21P2zH_9W8yb7f7TOZqNOHMy1KkPlfer4PvMwPXppYKqBjkIkRXX6Wk-hjqocWWKvBXHhEnwQLbCxFoEDPFuz1E7Ha-Lcr_zMmVHSAZs812GwmFqrPsJ_3dwv=w526-h422-no?authuser=0' width="200px" height="200" alt='Spike' class='max'></a>
             <button id="likebutton" onclick="myFunction(this, 'red')">Like</button>
@@ -39,7 +39,7 @@
               
               
          
-                <a href="/"><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdbc1ZPg75BHlJ4EbC8Y7xX6LH7EhIOIpCJA&usqp=CAU' width="250px" height="200" alt='Lizzie' class='max'> </a>
+                <a href="/"><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdbc1ZPg75BHlJ4EbC8Y7xX6LH7EhIOIpCJA&usqp=CAU' width="200px" height="200" alt='Lizzie' class='max'> </a>
                 <button id="likebutton" onclick="myFunction(this, 'red')">Like</button>
                <p class="text">Here is Lizzie, he is just a young pup but is very cheerful and loving. He rocks a black overcoat with a white tummy! If you have any more questions feel free to reach out to the current Shelter!</b></p>
                   
@@ -95,6 +95,6 @@
                   </div>
                   
                 </div>
-
+            
 </html>
 
