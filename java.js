@@ -20,11 +20,14 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
-function myFunction(element, color){
+function likeButton(element, color){
   element.style.color = color;
+  
 }
+
 
 function dark(){
   var element = document.body;
   element.classList.toggle("darkmode");
 }
+

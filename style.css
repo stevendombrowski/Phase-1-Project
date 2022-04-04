@@ -77,7 +77,6 @@ color: black;
   /* Style the tab content */
   .tabcontent {
     padding: 6px 12px;
-
     border: 1px solid #ccc;
     border-top: none;
   }
@@ -170,9 +169,9 @@ color: black;
    float: left;
    padding:10px
  }
-#likebutton {
+.likebutton {
   float:left;
   top:50%;
   left:21%;
-  transform:translate(0%, 890%)
-}
+  transform:translate(0%, 890%);
+  color: black;}
