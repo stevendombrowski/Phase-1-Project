@@ -175,3 +175,22 @@ color: black;
   left:21%;
   transform:translate(0%, 890%);
   color: black;}
+ 
+  .tab3{
+    text-align: center;
+    font-size: 30px;
+  }
+.breed-select{
+  width: 450px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+  display:block;
+}
+
+#dogimage{
+  padding-left: 38%;
+  align-items: center;
+  width:500px;
+  height:500px;
+}
