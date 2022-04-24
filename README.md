@@ -8,6 +8,9 @@ The last is a placeholder about section(to describe the organization that would 
 Installation Instructions(
 1. Copy the Repository on the site(https://github.com/stevendombrowski/Phase-1-Project)
 2. Open Command prompt and use command git clone, then followed by the HTTPS code that was copied from GitHub.
+
+![Copying Repo](https://user-images.githubusercontent.com/88370598/164958240-a1ad6f3b-1ae5-4087-aa5e-ba81fad2894b.PNG)
+
 )
 
 
