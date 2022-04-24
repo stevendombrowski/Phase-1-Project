@@ -22,22 +22,21 @@ color: black;
     left:39.5%;
     color:#324A5F;
     font-size: 6em;
-     text-shadow: 20px 20px 4px black;
+     text-shadow: 5px 5px 4px black;
 }
 .dogslist{
     position:absolute;
     padding-left:48%;
     font-weight: bolder;
     font-family: cursive;
-    color: #CCC9DC;
-    text-shadow: 4px 14px 4px black;
+    color: #324A5F;
     }
 
 .quote{
     position:absolute;
     top: 70px;
     left: 45%;
-    color:blueviolet;
+    color:#324A5F;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: italic; 
 }
@@ -183,7 +182,9 @@ color: black;
   height: 50px;
   font-size: 30px;
   text-align: center;
-  display:block;
+  display: block;
+  margin: 0 auto;
+  
 }
 
 #dogimage{

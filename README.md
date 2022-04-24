@@ -1,4 +1,7 @@
 # Phase-1-Project
+
+![Dogslist](https://user-images.githubusercontent.com/88370598/164958953-12b84ee6-bc90-41f7-95f6-31182490bce8.PNG)
+
 This project is a website created by myself. 
 The main purpose for this website is to act as a secondary Craiglists but for adopting dogs.
 It has on the main tab a list of popular dogs that are on the site(just place holder for creation of the site)
@@ -11,7 +14,10 @@ Installation Instructions(
 
 ![Copying Repo](https://user-images.githubusercontent.com/88370598/164958240-a1ad6f3b-1ae5-4087-aa5e-ba81fad2894b.PNG)
 
+There are no additional tools that need to be installed for this project.
 )
+
+
 
 
 
@@ -28,3 +34,6 @@ Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+License
+MIT

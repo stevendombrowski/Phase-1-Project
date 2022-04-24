@@ -21,15 +21,15 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
-function likeButton(element, color){
-  element.style.color = color;
+// function likeButton(element, color){
+//   element.style.color = color;
   
-}
-
-
+// }
+  
 function dark(){
   let element = document.body;
   element.classList.toggle("darkmode");
+  
 }
 
 const fetchDogBreeds = async () => {
@@ -73,12 +73,9 @@ const changeDog = () => {
 fetchDogBreeds()
 
 
+// let adopt = document.getElementById("adopt");
+// let shelter = document.getElementById("shelter");
+// let about = document.getElementById("about");
+// let dogfacts = document.getElementById("dogfacts");
 
-
-
-let adopt = document.getElementById("adopt");
-let shelter = document.getElementById("shelter");
-let about = document.getElementById("about");
-let dogfacts = document.getElementById("dogfacts");
-
-adopt.addEventListener(onclick="openTab(event, 'Popularpups")
+// adopt.addEventListener(onclick="openTab(event, 'Popularpups")
