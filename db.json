@@ -1,0 +1,10 @@
+{
+    "dogs":[
+        {
+            "id": 1,
+            "name": "max",
+            "image": "https://images.pexels.com/photos/164186/pexels-photo-164186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            
+        }
+    ]
+}
