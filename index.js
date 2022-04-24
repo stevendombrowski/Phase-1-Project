@@ -1,10 +1,10 @@
 
 
 function openTab(evt, tabName) {
- 
-  var i, tabcontent, tablinks;
+  // Declare all variables
+  let i, tabcontent, tablinks;
 
-  
+  // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -16,7 +16,7 @@ function openTab(evt, tabName) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
 
- 
+  // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active";
 }
@@ -28,7 +28,7 @@ function likeButton(element, color){
 
 
 function dark(){
-  var element = document.body;
+  let element = document.body;
   element.classList.toggle("darkmode");
 }
 
@@ -71,3 +71,14 @@ const changeDog = () => {
   getDogByBreed(event.target.value);
 }
 fetchDogBreeds()
+
+
+
+
+
+let adopt = document.getElementById("adopt");
+let shelter = document.getElementById("shelter");
+let about = document.getElementById("about");
+let dogfacts = document.getElementById("dogfacts");
+
+adopt.addEventListener(onclick="openTab(event, 'Popularpups")
