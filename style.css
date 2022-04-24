@@ -189,8 +189,8 @@ color: black;
 #dogimage{
   padding-left: 38%;
   align-items: center;
-  width:500px;
-  height:500px;
+  max-width:500px;
+  max-height:500px;
 }
 .addDog{
 float: left;
