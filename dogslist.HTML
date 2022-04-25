@@ -1,114 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="StyleSheet" href="./style.css">
-    <script type="text/javascript" src="index.js"></script>
+    <link rel="StyleSheet" href="style.css">
+   
     <link rel="Shortcut icon" href="https://previews.123rf.com/images/fokaspokas/fokaspokas1612/fokaspokas161200022/69001806-cat-and-dog-icon-black-icon-on-transparent-background-.jpg" type="image/x-icon">
     <head>
         <title>DogsList</title>
     </head>
 
-
-<div class="Dogs">
-    <div id="header">
-      <img src='https://images.prismic.io/wisdom/4487fdac-8353-4522-bdba-e2cf1ac72ca3_page-header-theprocess-Lg.jpg?auto=compress,format' alt="Logo" class="logo" />
-    </div><h1 class="dogslist">DogsList</h1>
-        <h2 class="quote">Your Craigslist for Dogs!</h2>
-    <h1 class="catch-line">Adopt Now!</h1>
-</div>
-
-<div class="tabs">
-    <button  id="adopt"></button>
-    <button  id="shelter"></button>
-    <button id="about"></button>
-    <button id="dogfacts">Dog Breeds</button>
-    <button class="darkmode-button" onclick="dark()">Toggle dark mode</button>
-    
-  </div>
-  
-  <!-- Tab content -->
-  <div class="content">
-    <div id='Popularpups' class='tab_wrap'>
-      <h3 class="popular">Popular Puppies</h3>
-      <p class="popular">Here are our most popular pups on the site</p>
-      
-        <ul>
-      <img src='https://images.pexels.com/photos/164186/pexels-photo-164186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width="200px" height="200" alt='Max' class='max' >
-      <button class="likebutton" onclick="likeButton(this, 'red')">Like</button>
-     <p class="text">Here is Max, He is just a small Corgi that loves adventures and is a fun loving small pet. He is around 3 years old. If you have any questions about max feel free to reach out to the author of the listing.</p>
-         
-            <img src='https://images.pexels.com/photos/2023384/pexels-photo-2023384.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' width="200px" height="200" alt='Spike' class='max'>
-            <button class="likebutton" onclick="likeButton(this, 'red')">Like</button>
-           <p class="text">Here is Spike, he is just a young pup but is very cheerful and loving. He rocks a black overcoat with some brown patterns. If you have any more questions feel free to reach out to the current Shelter!</p>
-              
-              
-         
-                <img src='https://images.pexels.com/photos/1139794/pexels-photo-1139794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width="200px" height="200" alt='Lizzie' class='max'> 
-                <button class="likebutton" onclick="likeButton(this, 'red')">Like</button>
-               <p class="text">Here is Lizzie, She is a smaller dog with a beautiful coat and a personality that will leave you feeling loved. If you have any more questions feel free to reach out to the current Shelter!</b></p>
-                  
-
-                  
-         
-                   <img src='https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width="200px" height="200" alt='Alex' class='max'>
-                   <button class="likebutton" onclick="likeButton(this, 'red')">Like</button>
-                   <p class="text">Here is Alex, a 4 year old adorable dog. Who loves to go on nice walks and runs or lazy days for whatever occasion. If you have any more questions feel free to reach out to the current Shelter!</b></p>
-
-                   <img src='https://images.pexels.com/photos/1289557/pexels-photo-1289557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width="200px" height="200" alt='Alex' class='max'>
-                   <button class="likebutton" onclick="likeButton(this, 'red')">Like</button>
-                   <p class="text">Here is Miya, A young Pug who likes to bask in the sun and have a nice lazy day. If you have any more questions feel free to reach out to the current Shelter!</b></p>
-
-                   <img src='https://images.pexels.com/photos/191353/pexels-photo-191353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width="200px" height="200" alt='Alex' class='max'>
-                   <button class="likebutton" onclick="likeButton(this, 'red')">Like</button>
-                   <p class="text">Here is Marco, a very small dog who loves to be held and cuddle. Marco, despite his small size will never hestitate to protect you. If you have any more questions feel free to reach out to the current Shelter!</b></p>
-
-                   <img src='https://images.pexels.com/photos/4201727/pexels-photo-4201727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width="200px" height="200" alt='Alex' class='max'>
-                   <button class="likebutton" onclick="likeButton(this, 'red')">Like</button>
-                   <p class="text">Here is Bonnie, an adorable pup who rocks a red scarf and loves to to go on nice adventures. If you have any more questions feel free to reach out to the current Shelter!</b></p>
-
-                   <img src='https://images.pexels.com/photos/1458926/pexels-photo-1458926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width="200px" height="200" alt='Alex' class='max'>
-                   <button class="likebutton" onclick="likeButton(this, 'red')">Like</button>
-                   <p class="text">Here is Poppy, she is just a young pup but is very cheerful and loving. He rocks a black overcoat with a white tummy! If you have any more questions feel free to reach out to the current Shelter!</b></p>
-
-                   <img src='https://images.pexels.com/photos/4587979/pexels-photo-4587979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width="200px" height="200" alt='Alex' class='max'>
-                   <button  class="likebutton" onclick="likeButton(this, 'red')">Like</button>
-                   <p class="text">Here is Kylo, A shiba inu who is as dramatic as they come. Kylo lovs attention and loves to be around people. If you have any more questions feel free to reach out to the current Shelter!</b></p>
-              
-                  
-        </ul>
+    <div class="Dogs">
+        <div id="header">
+          <img src='https://images.prismic.io/wisdom/4487fdac-8353-4522-bdba-e2cf1ac72ca3_page-header-theprocess-Lg.jpg?auto=compress,format' alt="Logo" class="logo" />
+        </div><h1 class="dogslist">DogsList</h1>
+            <h2 class="quote">Your Craigslist for Dogs!</h2>
+        <h1 class="catch-line">Adopt Now!</h1>
     </div>
-                   <div id="FindShelter" class="tab_wrap">
-                       <div class="headertext"> <h3>Find A Shelter</h3>
-                    <p >Find the nearest Shelter near you!</p> </div>
-                    <p>This is where we are located!</p>
+    
+
+    <body>
+        <div class="tabs">
+          <div class="tabs_head">
+            <div class="tabs_toggle is-active">
+              <span id="adopt" class="tabs_name"></span>
+            </div>
+            <div class="tabs_toggle">
+              <span id="shelter" class="tabs_name"></span>
+            </div>
+            <div class="tabs_toggle">
+              <span id="about"class="tabs_name"></span>
+            </div>
+            <div class="tabs_toggle">
+            <span id="dogfacts" class="tabs_name">Dog Breeds</span>
+            </div>
+            <div>
+                <button class="darkmode-button" onclick="dark()">Toggle dark mode [ON]</button>
+               
+            </div>
+        </div>
+        
+          <div class="tabs_body">
+            <div id='Popularpups' class="tabs_content is-active">
+              <h2 class="tabs_title">Popular Puppies</h2>
+              <img src='https://images.pexels.com/photos/164186/pexels-photo-164186.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width="200px" height="200" alt='Max' class='max' >
+              <button class="likebutton" onclick="likeButton(this, 'red')">Like</button>
+             <p class="text">Here is Max, He is just a small Corgi that loves adventures and is a fun loving small pet. He is around 3 years old. If you have any questions about max feel free to reach out to the author of the listing.</p>
+                 
+                    <img src='https://images.pexels.com/photos/2023384/pexels-photo-2023384.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' width="200px" height="200" alt='Spike' class='max'>
+                    <button class="likebutton" onclick="likeButton(this, 'red')">Like</button>
+                   <p class="text">Here is Spike, he is just a young pup but is very cheerful and loving. He rocks a black overcoat with some brown patterns. If you have any more questions feel free to reach out to the current Shelter!</p>
+                      
+                      
+                 
+                        <img src='https://images.pexels.com/photos/1139794/pexels-photo-1139794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width="200px" height="200" alt='Lizzie' class='max'> 
+                        <button class="likebutton" onclick="likeButton(this, 'red')">Like</button>
+                       <p class="text">Here is Lizzie, She is a smaller dog with a beautiful coat and a personality that will leave you feeling loved. If you have any more questions feel free to reach out to the current Shelter!</b></p>
+                          
+        
+                          
+                 
+                           <img src='https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width="200px" height="200" alt='Alex' class='max'>
+                           <button class="likebutton" onclick="likeButton(this, 'red')">Like</button>
+                           <p class="text">Here is Alex, a 4 year old adorable dog. Who loves to go on nice walks and runs or lazy days for whatever occasion. If you have any more questions feel free to reach out to the current Shelter!</b></p>
+        
+                           <img src='https://images.pexels.com/photos/1289557/pexels-photo-1289557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width="200px" height="200" alt='Alex' class='max'>
+                           <button class="likebutton" onclick="likeButton(this, 'red')">Like</button>
+                           <p class="text">Here is Miya, A young Pug who likes to bask in the sun and have a nice lazy day. If you have any more questions feel free to reach out to the current Shelter!</b></p>
+        
+                           <img src='https://images.pexels.com/photos/191353/pexels-photo-191353.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width="200px" height="200" alt='Alex' class='max'>
+                           <button class="likebutton" onclick="likeButton(this, 'red')">Like</button>
+                           <p class="text">Here is Marco, a very small dog who loves to be held and cuddle. Marco, despite his small size will never hestitate to protect you. If you have any more questions feel free to reach out to the current Shelter!</b></p>
+        
+                           <img src='https://images.pexels.com/photos/4201727/pexels-photo-4201727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width="200px" height="200" alt='Alex' class='max'>
+                           <button class="likebutton" onclick="likeButton(this, 'red')">Like</button>
+                           <p class="text">Here is Bonnie, an adorable pup who rocks a red scarf and loves to to go on nice adventures. If you have any more questions feel free to reach out to the current Shelter!</b></p>
+        
+                           <img src='https://images.pexels.com/photos/1458926/pexels-photo-1458926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width="200px" height="200" alt='Alex' class='max'>
+                           <button class="likebutton" onclick="likeButton(this, 'red')">Like</button>
+                           <p class="text">Here is Poppy, she is just a young pup but is very cheerful and loving. He rocks a black overcoat with a white tummy! If you have any more questions feel free to reach out to the current Shelter!</b></p>
+        
+                           <img src='https://images.pexels.com/photos/4587979/pexels-photo-4587979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' width="200px" height="200" alt='Alex' class='max'>
+                           <button  class="likebutton" onclick="likeButton(this, 'red')">Like</button>
+                           <p class="text">Here is Kylo, A shiba inu who is as dramatic as they come. Kylo lovs attention and loves to be around people. If you have any more questions feel free to reach out to the current Shelter!</b></p>
+            </div>
+            <div class="tabs_content">
+              <h2 id="FindShelter" class="tabs_title">Find A shelter</h2>
+              <p id="sheltertext">Find the nearest Shelter near you!</p> 
+                    <p id="sheltertext">This is where we are located!</p>
                     <p style="text-align:center;"><iframe 
                     
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.6176000574183!2d-75.05302088365863!3d39.725775779451496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6d419ca13a7a5%3A0xe84bf0932a9e4c27!2sEarthWise%20Pet%2F%20Turnersville!5e0!3m2!1sen!2sus!4v1647909308150!5m2!1sen!2sus" width="1450"  height="1200" style="border:0;" allowfullscreen="" id="map" loading="lazy"></iframe></p>
-                    <div class="Shelters">
-                        
-                    </div>
-                  </div>
-                  
-                  <div id="About" class="tab_wrap">
-                    <h1>About</h1>
-                    <h3>Here is who we are and what we do.</h3>
-                    <p class="message">We are a local organization that wants to help dogs of all ages, breeds, and personalities find their forever home. Dogs are more than just pets, they are family. We know from experience that finding a dog for adoption can be a difficult process, so we like to help guide you to your new friend/family member.</p>
-                    <h2>How to contact us!</h2>
-                    <h3 class="contact">Phone Number: (XXX)-XXX-XXXX</h3>
-                    <h3 class="contact">Social media: </h3>
-                  </div>
-
-
-
-                <div id="dogfact" class="tab_wrap">
-                    <p class="tab3">Here are dog breeds to help familiarize yourself with them!</p>
-                    <select class="breed-select" onchange="changeDog(this)">
-                        <option>Select a breed</option>
-                    </select>
-                    <img id="dogimage" src="" alt="Dog"></img>
-                </div>
-                  
-                </div>
-    </div>
-     
-</html>
-
+            </div>
+            <div class="tabs_content">
+                <h1 id="abouttext">About</h1>
+                <h3 id="abouttext">Here is who we are and what we do.</h3>
+                <p class="message">We are a local organization that wants to help dogs of all ages, breeds, and personalities find their forever home. Dogs are more than just pets, they are family. We know from experience that finding a dog for adoption can be a difficult process, so we like to help guide you to your new friend/family member.</p>
+                <h2 class="contact">How to contact us!</h2>
+                <h3 class="contact">Phone Number: (XXX)-XXX-XXXX</h3>
+                <h3 class="contact">Social media: </h3>
+            </div>
+             <div id="dogfact" class="tabs_content">
+                <p class="breed-text">Here are dog breeds to help familiarize yourself with them!</p>
+                <select class="breed-select" onchange="changeDog(this)">
+                    <option>Select a breed</option>
+                </select>
+                <img id="dogimage" src="" alt="Dog"></img>
+             </div>
+              
+            </div>
+          </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+    </html>

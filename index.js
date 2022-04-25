@@ -26,33 +26,28 @@ function likeButton(element, color){
   
 }
   
+let tabs = document.querySelectorAll('.tabs_toggle'),
+    contents = document.querySelectorAll('.tabs_content');
 
-let tabs = document.querySelectorAll(".tabs");
-let tab_wraps = document.querySelectorAll(".tab_wrap");
-
-tabs.forEach(function(tab, tab_index){
-  tab.addEventListener("click", function(){
-    tabs.forEach(function(tab){
-      tab.classList.remove("active");
-    })
-    tab.classList.add("active");
-
-    tab_wraps.forEach(function(content, content_index){
-      if(content_index == tab_index){
-          content.style.display = "block";
-      }
-      else{
-          content.style.display = "none";
-      }
-    })
-  })
-})
+tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+        contents.forEach((content) => {
+            content.classList.remove('is-active');
+        });
+        tabs.forEach((tab) => {
+            tab.classList.remove('is-active');
+        });
+        contents[index].classList.add('is-active');
+        tabs[index].classList.add('is-active');
+    });
+});
 
 function dark(){
   let element = document.body;
-  element.classList.toggle("darkmode");
+  element.classList.toggle("dark");
   
 }
+
 
 const fetchDogBreeds = async () => {
 

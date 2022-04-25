@@ -12,9 +12,12 @@ body {
     background-color: white;
 color: black;
 }
-.darkmode {
+.dark {
   background-color: #262626;
   color: white;
+  background: #262626;
+  
+  
 }
 .catch-line{
     position:absolute;
@@ -42,14 +45,16 @@ color: black;
 }
 
 
-/* Style the tab */
-.tabs {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    padding-left: 100px;
-  }
+
   
+  .tabs_buttons{
+
+    padding: 14px 16px;
+    background-color: inherit;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
 
   
   /* Style the buttons that are used to open the tab content */
@@ -63,22 +68,9 @@ color: black;
     transition: 0.3s;
   }
   
-  /* Change background color of buttons on hover */
-  .tabs button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tabs button.active {
-    background-color: #ccc;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-  }
+ #Popularpups{
+   float: left;
+ }
 
   .popular {
     text-align: center;
@@ -124,6 +116,7 @@ color: black;
     width: 250px;
     margin: 1em;
     margin-left: 25%;
+    float: left;
     
   }
   #shelter{
@@ -135,6 +128,7 @@ color: black;
     height: 94px;
     width: 250px;
     margin: 1em;
+    float: left;
   }
   #about{
     background-image: url(https://lh3.googleusercontent.com/fU9SX7aJW7eR45mMg_dN4rPpcQJzQEtx7k-dbWaEG2GXozet61BlYmwffV63bhaiXPXmuMExhNuCBCcpeQMVd9KUcJqPwqHxzOCH_Z5JeNayYpPKeTp5bttnIIQOcDaYhYjaWps0uqZYR-gvin8l5NCqi0tfU9X70D9_64HRaGB5edXE5CVtN01Yq6sJbaXwzNctf-b1JtkH7o5Hb4pxWRsw0vkjOhQmaswZPKP3u2J8WAQdDTjPDXhfgXLjV7RxCF8xECBJdVrJV5s3MTMRDXoainzgGqVdao6j3aSDmomVwgywLvWmbwQaZY8EjwwW3x6gPjnYlCGnKCSJD-XHqZ9v_QXSXTWP53iR-Hq311RPZhO4WjNUfxpCr8aOG6suhtv4DKdfM6a_8hRWV0B5S1qgkzDVBQR99Aw6FPqKLD3IH15gjjidACAlDZo3bTIWurhZTGTtxJbinJYD-ezETI67En3S9LH1EHldJOjZvp7Bxbadhkasn9_7NiyeCG6cOH5azl1WHCFDzIoTibV78G_DVvunaD4rp7cIf6gRnyJzyx2Wopo6QxaeSu1bioEY9N8SACP0VdJAuxXm1gKB5T-Ppcmd0ra_TQ3nCoKlxuNzK2B8SDX3r38gNFPbJaVOws2_6fmGRErfSyOnpWMw8XBVY0zQgAtVpdQOcgUfhup2VfmVVzT7UitaoQOye1VJE0gcu8--TXGYVBhOxBpipkNFtNFmFyah_lxAhOTzGiX0rKDDJ9PTlmmih4JmW57_iU4SQnf3NTYHTUCLasaA7mTu2Ip3syFr1zgkw9V9QfSfzbGkWkOmTAe0mfyt=w156-h61-no?authuser=0);
@@ -145,12 +139,21 @@ color: black;
    height: 94px;
    width: 250px;
    margin: 1em;
+   float: left;
+ }
+ #abouttext{
+ text-align: center;
+ padding-left: 500px;
+ float: left;
+ 
  }
 #FindShelter{ 
   text-align: center;
+  padding-left: 43%;
+  padding-top: 5%;
+  text-align: justify;
   font-size: 50px;
 }
-
  
  #About {
    text-align: center;
@@ -170,8 +173,10 @@ color: black;
   float:left;
   top:50%;
   left:21%;
-  transform:translate(0%, 890%);
-  color: black;}
+  transform:translate(0%, 400%);
+  color: black;
+}
+  
  
   .tab3{
     text-align: center;
@@ -182,9 +187,23 @@ color: black;
   height: 50px;
   font-size: 30px;
   text-align: center;
-  display: block;
   margin: 0 auto;
+  display: block;
   
+  
+  
+}
+.breed-text{
+  text-align: center;
+  padding-left: 35%;
+  padding-top: 5%;
+  text-align: justify;
+  font-size: 25px;
+}
+
+#dogfacts{
+ padding-left: 17px; 
+ color: black;
 }
 
 #dogimage{
@@ -198,12 +217,80 @@ float: left;
 padding-left: 35%;
 
 }
-.form {
-  background-color: var(--alt-bg-color);
-  padding: 1em;
-  -webkit-box-shadow: var(--box-shadow);
-  -moz-box-shadow: var(--box-shadow);
-  box-shadow: var(--box-shadow);
+
+
+body {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Montserrat;
+ 
 }
+
+.tabs {
+  display: block;
+  flex-direction: column;
   
   
+}
+
+
+.tabs_toggle {
+  margin: 0 5px;
+  padding: 7px 25px;
+  background: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.tabs_name {
+  font-weight: 500;
+  font-size: 14px;
+
+}
+
+.tabs_body {
+ 
+ 
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.tabs_title {
+  font-weight: 600;
+  font-size: 24px;
+ 
+  text-align: center;
+  
+}
+
+.tabs_text {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #484848;
+}
+
+.tabs_content {
+  display: none;
+}
+
+.tabs_toggle.is-active {
+  background: #e7eef8;
+}
+
+
+
+.tabs_content.is-active {
+  display: block;
+}
+
+#sheltertext{
+  text-align: center;
+  padding-left: 43%;
+  
+  text-align: justify;
+  font-size: 25px;
+}
+
