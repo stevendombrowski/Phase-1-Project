@@ -16,17 +16,18 @@
     <h1 class="catch-line">Adopt Now!</h1>
 </div>
 
-<div class="tab">
+<div class="tabs">
     <button  id="adopt"></button>
-    <button  id="shelter" onclick="openTab(event, 'FindShelter')"></button>
-    <button id="about" onclick="openTab(event, 'About')"></button>
-    <button id="dogfacts" onclick="openTab(event, 'dogfact')">Dog Breeds</button>
+    <button  id="shelter"></button>
+    <button id="about"></button>
+    <button id="dogfacts">Dog Breeds</button>
     <button class="darkmode-button" onclick="dark()">Toggle dark mode</button>
     
   </div>
   
   <!-- Tab content -->
-  <div id='Popularpups' class='tabcontent'>
+  <div class="content">
+    <div id='Popularpups' class='tab_wrap'>
       <h3 class="popular">Popular Puppies</h3>
       <p class="popular">Here are our most popular pups on the site</p>
       
@@ -74,9 +75,8 @@
               
                   
         </ul>
-</div>
-  
-                   <div id="FindShelter" class="tabcontent">
+    </div>
+                   <div id="FindShelter" class="tab_wrap">
                        <div class="headertext"> <h3>Find A Shelter</h3>
                     <p >Find the nearest Shelter near you!</p> </div>
                     <p>This is where we are located!</p>
@@ -88,7 +88,7 @@
                     </div>
                   </div>
                   
-                  <div id="About" class="tabcontent">
+                  <div id="About" class="tab_wrap">
                     <h1>About</h1>
                     <h3>Here is who we are and what we do.</h3>
                     <p class="message">We are a local organization that wants to help dogs of all ages, breeds, and personalities find their forever home. Dogs are more than just pets, they are family. We know from experience that finding a dog for adoption can be a difficult process, so we like to help guide you to your new friend/family member.</p>
@@ -99,7 +99,7 @@
 
 
 
-                <div id="dogfact" class="tabcontent">
+                <div id="dogfact" class="tab_wrap">
                     <p class="tab3">Here are dog breeds to help familiarize yourself with them!</p>
                     <select class="breed-select" onchange="changeDog(this)">
                         <option>Select a breed</option>
@@ -108,6 +108,7 @@
                 </div>
                   
                 </div>
-            
+    </div>
+     
 </html>
 
