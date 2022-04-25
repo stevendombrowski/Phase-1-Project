@@ -47,7 +47,13 @@ function dark(){
   element.classList.toggle("dark");
   
 }
+let body = document.querySelector('body');
 
+let toggle = document.getElementById('darkbutton');
+toggle.onclick = function(){
+  toggle.classList.toggle('active')
+  body.classList.toggle('active')
+}
 
 const fetchDogBreeds = async () => {
 
