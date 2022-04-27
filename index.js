@@ -21,11 +21,12 @@
 //   evt.currentTarget.className += " active";
 // }
 
-function likeButton(element, color){
-  element.style.color = color;
+// function likeButton(element, color){
+//   element.style.color = color;
   
-}
-  
+// }
+
+
 let tabs = document.querySelectorAll('.tabs_toggle'),
     contents = document.querySelectorAll('.tabs_content');
 
@@ -95,4 +96,68 @@ const changeDog = () => {
 }
 fetchDogBreeds()
 
+
+
+let likeButton = document.getElementById('likebutton');
+
+likeButton.addEventListener('click', function liked(){
+  likeButton.textContent = 'Liked';
+  likeButton.style.color = 'red';
+});
+
+let likeButton2 = document.getElementById('likebutton2');
+
+likeButton2.addEventListener('click', function liked(){
+  likeButton2.textContent = 'Liked';
+  likeButton2.style.color = 'red';
+});
+
+let likeButton3 = document.getElementById('likebutton3');
+
+likeButton3.addEventListener('click', function liked(){
+  likeButton3.textContent = 'Liked';
+  likeButton3.style.color = 'red';
+});
+
+let likeButton4 = document.getElementById('likebutton4');
+
+likeButton4.addEventListener('click', function liked(){
+  likeButton4.textContent = 'Liked';
+  likeButton4.style.color = 'red';
+});
+
+let likeButton5 = document.getElementById('likebutton5');
+
+likeButton5.addEventListener('click', function liked(){
+  likeButton5.textContent = 'Liked';
+  likeButton5.style.color = 'red';
+});
+
+let likeButton6 = document.getElementById('likebutton6');
+
+likeButton6.addEventListener('click', function liked(){
+  likeButton6.textContent = 'Liked';
+  likeButton6.style.color = 'red';
+});
+
+let likeButton7 = document.getElementById('likebutton7');
+
+likeButton7.addEventListener('click', function liked(){
+  likeButton7.textContent = 'Liked';
+  likeButton7.style.color = 'red';
+});
+
+let likeButton8 = document.getElementById('likebutton8');
+
+likeButton8.addEventListener('click', function liked(){
+  likeButton8.textContent = 'Liked';
+  likeButton8.style.color = 'red';
+});
+
+let likeButton9 = document.getElementById('likebutton9');
+
+likeButton9.addEventListener('click', function liked(){
+  likeButton9.textContent = 'Liked';
+  likeButton9.style.color = 'red';
+});
 
