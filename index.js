@@ -86,6 +86,7 @@ const getDogByBreed = async (breedId) => {
   const [data] = await fetch('https://api.thedogapi.com/v1/images/search?include_breed=1&breed_id=' + breedId).then((data) => data.json())
   const {url: imageUrl, breeds} = data;
   fillImage(imageUrl);
+  
 
 }
 
@@ -93,8 +94,14 @@ const changeDog = () => {
 
   console.log(event.target.value)
   getDogByBreed(event.target.value);
+  
 }
 fetchDogBreeds()
+
+
+
+
+
 
 
 
@@ -161,3 +168,16 @@ likeButton9.addEventListener('click', function liked(){
   likeButton9.style.color = 'red';
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('form').addEventListener('submit', (e) => {
+    e.preventDefault()
+    handleNewDog(e.target.newdog.value)
+  })
+})
+
+
+function handleNewDog(newDog){
+  let dogDes = document.createElement('p')
+  populateDogSelect.textContent = newDog
+  document.querySelector('#Popularpups').appendChild(dogDes)
+}
